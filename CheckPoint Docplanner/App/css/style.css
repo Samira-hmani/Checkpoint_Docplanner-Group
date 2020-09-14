@@ -1,6 +1,7 @@
 body {
-  font-family: Helvetica, Arial, " sans-serif";
+  font-family: Helvetica, Arial, "sans-serif";
   color: grey;
+  margin-top: 0px;
 }
 a {
   color: gray;
@@ -10,18 +11,16 @@ a {
   display: flex;
   justify-content: space-between;
   position: fixed;
-  overflow: visible;
   padding: 0 12%; /*0 top bottom, 12 right left*/
   height: 60px;
   background-color: white;
-  /*box shadow 0 top 2 right 6 bottom, 0 entourage*/
   box-shadow: 0 2px 6px 0 rgba(110, 103, 103, 0.05);
   width: 78%;
 }
 #logo {
-  width: 150px;
+  /*width: 150px;*/
   height: 130px;
-  margin: 13px 15px 13px 0;
+  margin: 15px 13px 0;
 }
 .header li {
   display: inline;
@@ -38,21 +37,12 @@ a {
   list-style: none;
   color: #ababab;
 }
-.aboutus {
-  width: 5rem;
-}
-.career {
-  width: 4rem;
-}
 
 .aboutus a {
   color: #00b39b;
   text-decoration: none;
 }
-.career a,
-.depart a {
-  color: #ababab;
-}
+
 .career a:hover,
 .depart a:hover {
   color: #00b39b;
@@ -86,7 +76,7 @@ a {
   right: 0%;
   background-color: #ffffff;
   min-width: 220px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -123,14 +113,13 @@ a {
 .DocplannerSygnet {
   display: flex;
   justify-content: center;
-  margin-top: 5px;
+  
 }
 .general-infos h1 {
   width: 63%;
   text-align: center;
   font-size: 34px;
   margin-left: 20%;
-  margin-top: 5px;
   color: rgb(0, 179, 155);
   letter-spacing: 0.2px;
   font-weight: 320;
@@ -284,15 +273,11 @@ a {
 .exp-container {
   display: flex;
   background-color: #d8f6f5;
-  width: 100%;
-  margin: 0px !important;
-  background-repeat: no-repeat;
-  padding: 4%;
+  margin: 0px;
 }
 .exp-container .left-exp {
   display: flex;
   flex-basis: 47%;
-  /*margin: 0% 10%;*/
   width: 30%;
   flex-direction: column;
   text-align: justify;
@@ -382,9 +367,10 @@ h2 {
   line-height: 24px;
 }
 /*section img offices**Grid*/
-.image-offices :hover{
-  box-shadow: 0 4px 3px 3px rgba(71, 69, 69, 0.05);}
-.image-offices{
+.image-offices :hover {
+  box-shadow: 0 4px 3px 3px rgba(71, 69, 69, 0.05);
+}
+.image-offices {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 20px;
